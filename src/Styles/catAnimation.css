@@ -1,0 +1,67 @@
+.catSvg{
+    min-width: 250px;
+    max-width: 550px;
+    margin: auto;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+}
+.catFloor{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20vh;
+    min-height: 52px;
+    max-height: 130px;
+    background-color: #85e6b9;
+}
+#tail {
+    animation: tail 3s infinite;
+    transform-box: fill-box;
+    transform-origin: 80% 5%;
+}
+
+@keyframes tail {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#openEyes{
+    animation: openEyes 3s infinite;
+}
+
+@keyframes openEyes {
+    0% {
+        opacity: 1;
+    }
+    5%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+}
+
+#deviceLight{
+    animation: deviceLight 3s infinite;
+}
+
+@keyframes deviceLight {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    40% {
+        opacity: 1;
+    }
+}
