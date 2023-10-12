@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 // import context
-import { ContextWrapper } from './Context/AppContext';
+import { ContextWrapper } from "./Context/AppContext";
 // import routes
-import Home from './Views/home';
-import ContactMe from './Components/ContactMe';
+import Home from "./Views/home";
+import ContactMe from "./Components/ContactMe";
 
 const router = createBrowserRouter([
   {
@@ -16,17 +16,17 @@ const router = createBrowserRouter([
     children: [
       {
         path: "contact-me",
-        element: <ContactMe /> ,
+        element: <ContactMe />,
       },
-    ]
+    ],
   },
   {
     path: "*",
-    element: <h1>Not found!</h1>
+    element: <h1>Not found!</h1>,
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ContextWrapper>
     <React.StrictMode>
